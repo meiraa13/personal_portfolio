@@ -4,9 +4,8 @@ import imgJS from "../public/static/img/stack/js.svg";
 import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
-import { FaVuejs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
+import { FaDocker, FaGit, FaPython } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiPostgresql, SiDjango, SiNestjs, SiExpress } from "react-icons/si";
 
 export const stackData = [
   {
@@ -21,8 +20,9 @@ export const stackData = [
     title: "JS",
     img: imgJS,
   },
+  { title: "TypeScript", img: SiTypescript },
   {
-    title: "Node JS",
+    title: "Node.js",
     img: imgNode,
   },
   {
@@ -33,7 +33,12 @@ export const stackData = [
     title: "React",
     img: imgReact,
   },
-  { title: "Vuejs", img: FaVuejs },
-  { title: "TypeScript", img: SiTypescript },
+  { title: "Next.js", img: SiNextdotjs },
+  { title: "PostgreSQL", img: SiPostgresql },
+  { title: "Nest.js", img: SiNestjs },
+  { title: "Express.js", img: SiExpress },
+  { title: "Git", img: FaGit },
+  { title: "Python", img: FaPython },
+  { title: "Django", img: SiDjango },
   { title: "Docker", img: FaDocker },
 ];

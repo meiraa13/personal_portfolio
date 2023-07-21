@@ -75,7 +75,7 @@ export const Project = (): JSX.Element => {
             </ProjectLink>
             {repository.homepage && (
               <ProjectLink target="_blank" href={repository.homepage}>
-                <FaShare /> Aplicação
+                <FaShare /> Go to Application
               </ProjectLink>
             )}
           </ProjectLinks>

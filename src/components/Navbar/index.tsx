@@ -75,6 +75,17 @@ export const NavLinks = (): JSX.Element => {
           Whatsapp
         </Button>
       )}
+      {userData.cv && (
+        <Button
+          type="primary"
+          as="a"
+          target="_blank"
+          href={`${userData.cv}`}
+        >
+          CV
+        </Button>
+      )}
+
 
       {userData.githubUser && (
         <Button
