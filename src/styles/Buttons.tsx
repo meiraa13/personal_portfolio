@@ -5,7 +5,7 @@ export const Button = styled('button', {
     height: "2.75rem",
     appearance: "none",
     background: "$whiteFixed",
-    color: "$grey1",
+    color: "$mode",
     fontWeight: "600",
     padding: "0 2rem",
     border: "2px solid $whiteFixed",
@@ -21,28 +21,31 @@ export const Button = styled('button', {
     variants: {
         type: {
             btLink: {
-                background: "transparent",
+                backgroundColor: "$grey1",
                 borderColor: "transparent",
+                "&:hover":{
+                    background:"$grey2"
+                }
             },
             primary: {
                 background: "$brand1",
                 borderColor: "$brand1",
-                color: "$whiteFixed",
+                color: "$grey1",
                 "&:hover": {
-                    backgroundColor: "$brand2",
-                    borderColor: "$brand2",
+                    borderColor: "$mode",
                 }
             },
             icon: {
                 borderColor: "$grey5",
                 backgroundColor: "transparent",
                 "&:hover": {
-                    backgroundColor: "$grey5",
+                    backgroundColor: "$grey2",
                 }
             },
             circle: {
-                borderColor: "$grey5",
+                borderColor: "$grey1",
                 backgroundColor: "$whiteFixed",
+                color: "$grey1",
                 borderRadius: "50%",
                 padding: "0",
                 width: "2.75rem",

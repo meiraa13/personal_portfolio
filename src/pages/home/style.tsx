@@ -53,6 +53,7 @@ export const StackCards = styled("div", {
 });
 
 export const ProjectsArea = styled("section", {
+  backgroundColor: "$grey1",
   padding: "4rem 0 8rem 0",
 });
 
@@ -63,6 +64,7 @@ export const ProjectsAreaSocialMediaMessage = styled("aside", {
   gap: "2rem",
   position: "sticky",
   top: "10rem",
+  color:"$brand3",
 
   "@mobile": {
     width: "100%",

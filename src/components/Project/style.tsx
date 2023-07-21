@@ -4,6 +4,10 @@ import { Text } from "../../styles/Text"
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  border: "5px solid $grey3",
+  padding: "1rem",
+  borderRadius: "0.5rem",
+  backgroundColor: "$grey4"
 });
 
 export const ProjectStack = styled(Flex, {

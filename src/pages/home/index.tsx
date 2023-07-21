@@ -31,20 +31,20 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+            <Text as="h1" type="heading1" color="grey1">
+              Always learning new technologies that help me deliver the best solutions!{" "}
             </Text>
-            <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+            <Text type="body1" color="grey1">
+              Passionate about technology since I was a kid, I started learning programming in Kenzie Academy bootcamp.
+              For the front-end my main stacks are [react, next, typescript, javascript] and for the back-end they are 
+              [node, express, postgreSQL, typeORM, nest, python, django]
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" href="#projetos">
-                Projetos
+              <Button as="a" type="btLink" href="#projetos">
+                Projects
               </Button>
               <Button as="a" href="#tecnologias" type="btLink" color="grey5">
-                Tecnologias
+                Techs
               </Button>
             </HeaderButtonsArea>
           </HeaderContent>
@@ -53,7 +53,7 @@ export const Home = (): JSX.Element => {
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
+            Languages and Technologies
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
@@ -66,13 +66,12 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey1">
-                Vamos trocar uma ideia?
+              <Text as="h2" type="heading4" color="grey4">
+                Let's talk?
               </Text>
-              <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+              <Text as="p" type="body1" color="grey4">
+                I'm always sharing my thoughts and projects on LinkedIn, feel 
+                free to reach out and connect!
               </Text>
               <Button
                 type="primary"
@@ -80,19 +79,19 @@ export const Home = (): JSX.Element => {
                 as="a"
                 href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
               >
-                Acessar perfil no LinkedIn
+                My LinkedIn profile
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
-              <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
-                Projetos
+              <Text type="body1" color="grey4" css={{ marginBottom: "$2" }}>
+                Projects
               </Text>
-              <Text as="h3" type="heading2" color="grey1">
-                Originalidade e{" "}
+              <Text as="h3" type="heading2" color="grey4">
+                Made with {" "}
                 <Text as="span" color="brand1" type="heading2">
-                  dedicação
+                  passion
                 </Text>{" "}
-                em cada detalhe
+                and dedication
               </Text>
               <Project />
             </ProjectsAreaContent>
