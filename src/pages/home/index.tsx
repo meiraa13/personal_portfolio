@@ -35,9 +35,17 @@ export const Home = (): JSX.Element => {
               Always learning new technologies that help me deliver the best solutions!{" "}
             </Text>
             <Text type="body1" color="grey1">
-              Passionate about technology since I was a kid, I started learning programming in Kenzie Academy bootcamp.
-              For the front-end my main stacks are [react, next, typescript, javascript] and for the back-end they are 
-              [node, express, postgreSQL, typeORM, nest, python, django]
+            As a Full Stack Developer and teaching assistant at Kenzie Academy Brasil, 
+            I combine my passion for technology and education to create and assist complex web applications
+            using various tools and frameworks. At Kenzie Academy's bootcamp I learned how to use 
+            JavaScript, TypeScript, React, Node.js, Express, Nest, Python, 
+            Django, PostgreSQL, and other technologies to build and consume RESTful APIs, work with databases, 
+            and apply object-oriented programming concepts.<br/><br/>
+            Before switching to web development, I had a career in marketing and product management, 
+            where I developed and structured product lines from market research to launch, managing development 
+            schedules, profitability analysis, pricing, assortment, sales forecasting, and packaging design. 
+            I also have a degree in communication and marketing from ESPM, 
+            and I speak fluent English, having taken Business Administration course in Dublin.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="btLink" href="#projetos">
