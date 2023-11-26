@@ -7,7 +7,8 @@ export const Project = styled("article", {
   border: "5px solid $grey3",
   padding: "1rem",
   borderRadius: "0.5rem",
-  backgroundColor: "$grey4"
+  backgroundColor: "$grey4",
+
 });
 
 export const ProjectStack = styled(Flex, {
