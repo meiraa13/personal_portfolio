@@ -63,7 +63,7 @@ export const globalStyles = globalCss({
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
   const theme = createTheme({
     colors: {
-      brand1: "#fad02a",//fad02a
+      brand1: "#fad02c",//fad02a
       brand2: "#7D82F1",
       brand3: "#BEC1F8",
       brand4: "#0e0e0e",

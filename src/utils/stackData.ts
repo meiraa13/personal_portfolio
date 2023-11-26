@@ -8,31 +8,13 @@ import { FaDocker, FaGit, FaPython } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiPostgresql, SiDjango, SiNestjs, SiExpress } from "react-icons/si";
 
 export const stackData = [
-  {
-    title: "HTML",
-    img: imgHTML,
-  },
-  {
-    title: "CSS",
-    img: imgCSS,
-  },
-  {
-    title: "JS",
-    img: imgJS,
-  },
+  { title: "HTML", img: imgHTML },
+  { title: "CSS", img: imgCSS },
+  { title: "JS", img: imgJS },
   { title: "TypeScript", img: SiTypescript },
-  {
-    title: "Node.js",
-    img: imgNode,
-  },
-  {
-    title: "Styled Components",
-    img: imgStyled,
-  },
-  {
-    title: "React",
-    img: imgReact,
-  },
+  { title: "Node.js", img: imgNode },
+  { title: "Styled Components", img: imgStyled },
+  { title: "React", img: imgReact },
   { title: "Next.js", img: SiNextdotjs },
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "Nest.js", img: SiNestjs },

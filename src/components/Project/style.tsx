@@ -12,11 +12,12 @@ export const Project = styled("article", {
 
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
+
 });
 
 export const ProjectStackTech = styled("span", {
-  backgroundColor: "$brand4",
-  color: "$brand2",
+  display: "flex",
+  gap: "1rem",
   padding: "0  0.5rem",
   borderRadius: "$2",
 });

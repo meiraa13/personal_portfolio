@@ -14,7 +14,7 @@ import { userData } from "@/utils/userData";
 interface ReposType {
   id: number;
   name: string;
-  language: string;
+  topics: string[];
   description: string;
   html_url: string;
   homepage: string;
@@ -22,6 +22,7 @@ interface ReposType {
 
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,37 +39,21 @@ export const Project = (): JSX.Element => {
       }
 
       return json;
-    };
+    }
     fetchData();
-  }, []);
+  }, [])
 
   return (
     <>
       {repositories?.map((repository) => (
         <ProjectWrapper key={repository.id}>
-          <Text
-            as="h2"
-            type="heading3"
-            css={{ marginBottom: "$3" }}
-            color="grey1"
-          >
-            {repository.name}
-          </Text>
+          <h3> {repository.name}</h3>
+          
+          <ProjectStack>
+            <Text type="body3" color="grey2">Description:</Text>
+            <Text type="body1">{repository.description}</Text>
+          </ProjectStack>
 
-          {repository.language && (
-            <ProjectStack>
-              <Text type="body2">Linguagem:</Text>
-              <ProjectStackTech>
-                <Text color="brand1" type="body2">
-                  {repository.language}
-                </Text>
-              </ProjectStackTech>
-            </ProjectStack>
-          )}
-
-          <Text type="body1" color="grey2">
-            {repository.description}
-          </Text>
           <ProjectLinks>
             <ProjectLink target="_blank" href={repository.html_url}>
               <FaGithub /> Code
