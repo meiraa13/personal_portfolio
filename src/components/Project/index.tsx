@@ -47,21 +47,14 @@ export const Project = (): JSX.Element => {
     <>
       {repositories?.map((repository) => (
         <ProjectWrapper key={repository.id}>
-          <Text
-            as="h2"
-            type="heading3"
-            css={{ marginBottom: "$3" }}
-            color="grey1"
-          >
-            {repository.name}
-          </Text>
+          <h3 > {repository.name}  </h3>
 
-          {repository.language && (
+          {repository.description && (
             <ProjectStack>
-              <Text type="body2">Linguagem:</Text>
+              <Text type="body2">About:</Text>
               <ProjectStackTech>
-                <Text color="brand1" type="body2">
-                  {repository.language}
+                <Text  type="body2">
+                  {repository.description}
                 </Text>
               </ProjectStackTech>
             </ProjectStack>
